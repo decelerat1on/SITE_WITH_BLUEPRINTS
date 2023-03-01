@@ -7,10 +7,10 @@
 
 
     <title>Главная страница</title>
-    <link rel="stylesheet" href="{{ url_for('static',filename='css/nicepage.css') }}" media="screen">
-<link rel="stylesheet" href="../static/css/Главная-страница.css" media="screen">
-    <script class="u-script" type="text/javascript" src="../static/js/jquery.js" defer=""></script>
-    <script class="u-script" type="text/javascript" src="../static/js/nicepage.js" defer=""></script>
+    <link rel="stylesheet" href="{{ url_for('mainpage_blueprint.static',filename='css/nicepage.css') }}" media="screen">
+<link rel="stylesheet" href="{{ url_for('mainpage_blueprint.static',filename='css/Главная-страница.css') }}" media="screen">
+    <script class="u-script" type="text/javascript" src="{{ url_for('mainpage_blueprint.static',filename='js/jquery.js') }}" defer=""></script>
+    <script class="u-script" type="text/javascript" src="{{ url_for('mainpage_blueprint.static',filename='js/nicepage.js') }}" defer=""></script>
     <meta name="generator" content="Nicepage 5.5.0, nicepage.com">
     <meta name="referrer" content="origin">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
@@ -24,7 +24,7 @@
 		"@context": "http://schema.org",
 		"@type": "Organization",
 		"name": "Site1",
-		"logo": "images/8eab37c1-fed5-63f6-ecc3-6ddb42a3a8be.png"
+		"logo": "{{ url_for('mainpage_blueprint.static',filename='images/8eab37c1-fed5-63f6-ecc3-6ddb42a3a8be.png') }}"
 }</script>
     <meta name="theme-color" content="#478ac9">
     <meta property="og:title" content="Главная страница">
@@ -130,7 +130,7 @@
           <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
         </div>
       </nav><a href="https://nicepage.com" class="u-image u-logo u-image-1" data-image-width="399" data-image-height="153">
-        <img src="../static/images/8eab37c1-fed5-63f6-ecc3-6ddb42a3a8be.png" class="u-logo-image u-logo-image-1">
+        <img src="{{ url_for('mainpage_blueprint.static',filename='images/8eab37c1-fed5-63f6-ecc3-6ddb42a3a8be.png') }}" class="u-logo-image u-logo-image-1">
       </a><!--shopping_cart--><a class="u-shopping-cart u-shopping-cart-1" href="#"><span class="u-icon u-shopping-cart-icon u-icon-1"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 16 16" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-0f4c"></use></svg><svg class="u-svg-content" viewBox="0 0 16 16" x="0px" y="0px" id="svg-0f4c"><path d="M14.5,3l-2.1,5H6.1L5.9,7.6L4,3H14.5 M0,0v1h2.1L5,8l-2,4h11v-1H4.6l1-2H13l3-7H3.6L2.8,0H0z M12.5,13
 	c-0.8,0-1.5,0.7-1.5,1.5s0.7,1.5,1.5,1.5s1.5-0.7,1.5-1.5S13.3,13,12.5,13L12.5,13z M4.5,13C3.7,13,3,13.7,3,14.5S3.7,16,4.5,16
 	S6,15.3,6,14.5S5.3,13,4.5,13L4.5,13z"></path></svg>
@@ -185,7 +185,7 @@
             <div class="u-layout-row">
               <div class="u-container-style u-layout-cell u-radius-50 u-size-30-lg u-size-30-xl u-size-60-md u-size-60-sm u-size-60-xs u-layout-cell-1">
                 <div class="u-container-layout u-valign-bottom u-container-layout-1">
-                  <img class="u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-image u-image-round u-radius-50 u-image-1" src="../static/images/873acf0697b20887bb8c7328f97f244c.jpg" data-image-width="564" data-image-height="564">
+                  <img class="u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-image u-image-round u-radius-50 u-image-1" src="{{ url_for('mainpage_blueprint.static',filename='images/873acf0697b20887bb8c7328f97f244c.jpg') }}" data-image-width="564" data-image-height="564">
                 </div>
               </div>
               <div class="u-container-align-center u-container-style u-layout-cell u-size-30-lg u-size-30-xl u-size-60-md u-size-60-sm u-size-60-xs u-layout-cell-2">
@@ -209,7 +209,7 @@
                 <h4 class="u-align-center u-product-control u-text u-text-1">
                   <a class="u-product-title-link" href="#"><!--product_title_content-->Product 1 Title<!--/product_title_content--></a>
                 </h4><!--/product_title--><!--product_image-->
-                <img class="u-image u-product-control u-image-1" src="../static/images/d3669afa0da2a5ce83d75ca72a340905.jpg" data-image-width="563" data-image-height="750"><!--/product_image--><!--product_content-->
+                <img class="u-image u-product-control u-image-1" src="{{ url_for('mainpage_blueprint.static',filename='images/d3669afa0da2a5ce83d75ca72a340905.jpg') }}" data-image-width="563" data-image-height="750"><!--/product_image--><!--product_content-->
                 <div class="u-product-control u-product-desc u-text u-text-default u-text-2"><!--product_content_content-->Sample small text. Lorem ipsum dolor sit amet.<!--/product_content_content--></div><!--/product_content--><!--product_button--><!--options_json--><!--{"clickType":"add-to-cart","content":"В КОРЗИНУ"}--><!--/options_json-->
                 <a href="" class="u-border-2 u-border-grey-25 u-btn u-btn-rectangle u-button-style u-none u-product-control u-text-body-color u-btn-1"><!--product_button_content-->В КОРЗИНУ<!--/product_button_content--></a><!--/product_button-->
               </div>
@@ -219,7 +219,7 @@
                 <h4 class="u-align-center u-product-control u-text u-text-3">
                   <a class="u-product-title-link" href="#"><!--product_title_content-->Product 2 Title<!--/product_title_content--></a>
                 </h4><!--/product_title--><!--product_image-->
-                <img class="u-image u-product-control u-image-2" src="../static/images/161682917869c354f27b7fc10c9eafec.jpg" data-image-width="564" data-image-height="564"><!--/product_image--><!--product_content-->
+                <img class="u-image u-product-control u-image-2" src="{{ url_for('mainpage_blueprint.static',filename='images/161682917869c354f27b7fc10c9eafec.jpg') }}" data-image-width="564" data-image-height="564"><!--/product_image--><!--product_content-->
                 <div class="u-product-control u-product-desc u-text u-text-default u-text-4"><!--product_content_content-->Sample small text. Lorem ipsum dolor sit amet.<!--/product_content_content--></div><!--/product_content--><!--product_button--><!--options_json--><!--{"clickType":"add-to-cart","content":"в корзину\n"}--><!--/options_json-->
                 <a href="" class="u-border-2 u-border-grey-25 u-btn u-btn-rectangle u-button-style u-none u-product-control u-text-body-color u-btn-2"><!--product_button_content-->в корзину<br><!--/product_button_content-->
                 </a><!--/product_button-->
@@ -230,7 +230,7 @@
                 <h4 class="u-align-center u-product-control u-text u-text-5">
                   <a class="u-product-title-link" href="#"><!--product_title_content-->Product 3 Title<!--/product_title_content--></a>
                 </h4><!--/product_title--><!--product_image-->
-                <img class="u-image u-product-control u-image-3" src="../static/images/152f38dbcde93a2c2aa2bcb0552f4f26.jpg" data-image-width="564" data-image-height="564"><!--/product_image--><!--product_content-->
+                <img class="u-image u-product-control u-image-3" src="{{ url_for('mainpage_blueprint.static',filename='images/152f38dbcde93a2c2aa2bcb0552f4f26.jpg') }}" data-image-width="564" data-image-height="564"><!--/product_image--><!--product_content-->
                 <div class="u-product-control u-product-desc u-text u-text-default u-text-6"><!--product_content_content-->Sample small text. Lorem ipsum dolor sit amet.<!--/product_content_content--></div><!--/product_content--><!--product_button--><!--options_json--><!--{"clickType":"add-to-cart","content":"В КОРЗИНУ\n"}--><!--/options_json-->
                 <a href="" class="u-border-2 u-border-grey-25 u-btn u-btn-rectangle u-button-style u-none u-product-control u-text-body-color u-btn-3"><!--product_button_content-->В КОРЗИНУ<br><!--/product_button_content-->
                 </a><!--/product_button-->
@@ -320,7 +320,7 @@
     
     <footer class="u-align-center u-clearfix u-footer u-white u-footer" id="sec-ac41"><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
         <a href="https://nicepage.com" class="u-image u-logo u-image-1" data-image-width="399" data-image-height="153">
-          <img src="../static/images/8eab37c1-fed5-63f6-ecc3-6ddb42a3a8be.png" class="u-logo-image u-logo-image-1">
+          <img src="{{ url_for('mainpage_blueprint.static',filename='images/8eab37c1-fed5-63f6-ecc3-6ddb42a3a8be.png') }}" class="u-logo-image u-logo-image-1">
         </a>
       </div></footer>
     <section class="u-backlink u-clearfix u-grey-80">

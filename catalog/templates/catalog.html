@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Каталог</title>
+</head>
+<body>
+{% for item in item_list %}
+название товара: {{ item.name }} <br>
+количество товара: {{ item.count }} <br>
+описание товара: {{ item.discription }}
+{% endfor %}
+{% if if_aut %}
+пользователь авторизован:
+{% endif %}
+</body>
+</html>
